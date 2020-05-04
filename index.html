@@ -73,57 +73,222 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <h2>Topics Covered</h2>
 <p>Click below to expand reminders of the topics we covered in this module</p>
-<button class="accordion">Week 7 - Information Theories</button>
-<div class="panel">
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-<div class="w3-dropdown-hover">Shannon
-  <div class="w3-dropdown-content w3-card-4" style="width:250px">
-    <div class="w3-container">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+<body>
+
+<h3>Week 7 - Information Theories</h3>
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:teal;">
+    Shannon
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:navy;">
+    Dretske
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       <p>•	Events</p>
       <p>•	Subjective probabilities</p>
       <p>•	Surprise</p>
       <p>•	Amount of information</p>
-    </div>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Propositions</p>
+      <p>•	Signal</p>
+      <p>•	Background knowledge</p>
+      <p>•	Receiver’s ability to digitise</p>
+</div>
+
+<div class="row">
+   <h3>Week 8 - Perception</h3>
+    <div class="column" onclick="openTab('b3');" style="background:navy;">
+    Senses
+  </div>
+    <div class="column" onclick="openTab('b4');" style="background:teal;">
+   Attention
+  </div>
+      <div class="column" onclick="openTab('b5');" style="background:navy;">
+   Schemas
+  </div>
+      <div class="column" onclick="openTab('b6');" style="background:teal;">
+   Processing
   </div>
 </div>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+
+<div id="b3" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	What information is coming through the senses?</p>
+      <p>•	Remember, there are more than 5</p>
 </div>
 
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div id="b4" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Top-down attention</p>
+      <p>•	Bottom-up attention</p>
+      <p>•	What tasks are driving attention?</p>
+      <p>•	What unusual parts of the scenario are directing attention?</p>
 </div>
 
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div id="b5" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	What schemas are being drawn on during processing?</p>
+      <p>•	Is any information experienced in the scenario being Assimilated into an existing schema?</p>
+      <p>•	Background knowledge</p>
+      <p>•	Is Accommodation occurring – are any new schemas being formed?</p>
 </div>
+
+<div id="b6" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Top-down processing</p>
+      <p>•	Bottom-up processing</p>
+      <p>•	How are expectations filling in missing information?</p>
+      <p>•	What changes or errors in predictions are the perceptual system picking up in the scenario?</p>
+</div>
+
+<div class="row">
+   <h3>Week 8 - Memory</h3>
+    <div class="column" onclick="openTab('b7');" style="background:navy;">
+   Working Memory
+  </div>
+    <div class="column" onclick="openTab('b8');" style="background:teal;">
+   Long Term Memory
+  </div>
+      <div class="column" onclick="openTab('b9');" style="background:navy;">
+   Retrieval
+  </div>
+</div>
+
+<div id="b7" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Limits to capacity</p>
+      <p>•	Cognitive load</p>
+</div>
+
+<div id="b8" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Episodic</p>
+      <p>•	Semantic</p>
+      <p>•	Procedural</p>
+</div>
+
+<div id="b9" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Recall</p>
+      <p>•	Recognition</p>
+</div>
+
+<div class="row">
+   <h3>Week 9 - Rationality and Decision-making</h3>
+    <div class="column" onclick="openTab('b10');" style="background:navy;">
+   Bounded rationality
+  </div>
+    <div class="column" onclick="openTab('b11');" style="background:teal;">
+   Dual Process Theories
+  </div>
+      <div class="column" onclick="openTab('b12');" style="background:navy;">
+   System Interaction
+  </div>
+      <div class="column" onclick="openTab('b13');" style="background:teal;">
+   Cognitive Biases
+  </div>
+</div>
+
+<div id="b10" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	What assumptions exist for rational thinking?</p>
+      <p>•	How are the users in your scenario bounded in their rationality?</p>
+</div>
+
+<div id="b11" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	What decision would System 1 make? What heuristics, intuitions, instincts, etc. are driving this decision?</p>
+      <p>•	What decision would a user make if they were employing System 2?</p>
+</div>
+
+<div id="b12" class="containerTab" style="display:none;background:navy">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	How would the Default-Interventionalist Model describe the process of making the decision?</p>
+      <p>•	How would the Parallel-Competitive Model describe the process of making the decision?</p>
+</div>
+
+<div id="b13" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <p>•	Availability Bias</p>
+      <p>•	Anchoring Bias</p>
+      <p>•	Framing Effect</p>
+      <p>•	Confirmation Bias</p>
+      <p>•	Correlation=causation</p>
+      <p>•	Hindsight Bias</p>
+      <p>•	Authority Bias</p>
+      <p>•	Loss aversion</p>
+      <p>•	Recency/Primacy</p>
+      <p>•	Modality effect</p>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<p>This content is also available as a PDF on Blackboard.</p>
+<p>As always, let us know if you have any questions via Slack or email.</p>
+</footer>
 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
 }
 </script>
 
 
 </body>
 </html>
+
 
